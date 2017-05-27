@@ -47,13 +47,13 @@ function  obtemPacienteDoFormulario(form){
 function validaPaciente(paciente){
 	var erros = [];
 
-	if (paciente.nome.length == 0) erros.push("Preencha o campo 'Nome'");
+	if (paciente.nome.length == 0) erros.push("Preencha o campo 'Nome' ");
 
-	if (paciente.gordura.length == 0) erros.push("Preencha o campo '% de Gordura'");
+	if (paciente.gordura.length == 0) erros.push("Preencha o campo '% de Gordura' ");
 
-	if (paciente.peso.length == 0) erros.push("Preencha o campo 'Peso");
+	if (paciente.peso.length == 0) erros.push("Preencha o campo 'Peso' ");
 	
-	if (paciente.altura.length == 0) erros.push("Preencha o campo 'Altura");
+	if (paciente.altura.length == 0) erros.push("Preencha o campo 'Altura' ");
 
 	if (!validaPeso(paciente.peso)) erros.push("Peso inválido");
 
