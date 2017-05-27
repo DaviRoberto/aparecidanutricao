@@ -10,10 +10,13 @@ campoFilter.addEventListener("input", function(){
 			var paciente = pacientes[i]; 
 			var tdNome = paciente.querySelector(".info-nome"); // Buscando o nome do paciente e adicionando a variável 'tdNome'
 			var nome = tdNome.textContent; // Pegando apenas o conteudo de texto do nome
-			if (nome != this.value) { // Se o nome digitado é diferente dos nomes que já tem, esconde
+			// Criando uma expressão regular
+			var expressao = new RegExp(this.value, "i");
+
+			if (!expressao.test(nome)) { // Se pelo menos um pedaço do nome digitado é diferente dos nomes que já tem, esconde os nomes diferentes
 				paciente.classList.add("esconder");
 			}else{ 
-				paciente.classList.remove("esconder"); // Senão mostra
+				paciente.classList.remove("esconder"); // Senão mostra osd iguais
 			}
 		}	
 	} else {
