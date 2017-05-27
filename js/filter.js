@@ -16,7 +16,7 @@ campoFilter.addEventListener("input", function(){
 			if (!expressao.test(nome)) { // Se pelo menos um pedaço do nome digitado é diferente dos nomes que já tem, esconde os nomes diferentes
 				paciente.classList.add("esconder");
 			}else{ 
-				paciente.classList.remove("esconder"); // Senão mostra osd iguais
+				paciente.classList.remove("esconder"); // Senão mostra os nomes iguais
 			}
 		}	
 	} else {
