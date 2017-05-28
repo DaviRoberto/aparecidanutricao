@@ -159,3 +159,8 @@ label[for="filtrar-tabela"] {
 .esconder{
 	display: none;
 }
+#error-ajax{
+	color: red;
+	font-weight: bold;
+	font-size: 14px;
+}
